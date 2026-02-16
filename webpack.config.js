@@ -1,4 +1,6 @@
+const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,20 +12,40 @@ module.exports = {
     filename: 'bundle.js',
   },
   devtool: 'source-map',
+  resolve: {
+    mainFields: ['main'],
+  },
   devServer: {
     disableHostCheck: true,
     host: 'localhost',
     hot: true,
     inline: true,
-    port: 5050,
+    port: process.env.PORT || 5050,
     stats: 'errors-warnings',
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader'],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        include: /node_modules\/(@mui|@emotion)\//,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { modules: 'commonjs' }],
+              '@babel/preset-react',
+            ],
+            plugins: [
+              '@babel/plugin-proposal-optional-chaining',
+              '@babel/plugin-proposal-nullish-coalescing-operator',
+            ],
+          },
+        },
       },
       {
         test: /\.css$/i,
@@ -32,6 +54,10 @@ module.exports = {
     ],
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'index.html'),
+      inject: 'body',
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({

@@ -1,21 +1,20 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+import { Typography, Toolbar, IconButton, Tooltip as MuiTooltip } from '@mui/material';
+import {
+  Search as SearchIcon,
+  CloudDownload as DownloadIcon,
+  Print as PrintIcon,
+  ViewColumn as ViewColumnIcon,
+  FilterList as FilterIcon,
+} from '@mui/icons-material';
 import Popover from './Popover';
 import TableFilter from './TableFilter';
 import TableViewCol from './TableViewCol';
 import TableSearch from './TableSearch';
-import SearchIcon from '@mui/icons-material/Search';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import PrintIcon from '@mui/icons-material/Print';
-import ViewColumnIcon from '@mui/icons-material/ViewColumn';
-import FilterIcon from '@mui/icons-material/FilterList';
 import ReactToPrint, { PrintContextConsumer } from 'react-to-print';
 import find from 'lodash.find';
 import { withStyles } from 'tss-react/mui';
 import { createCSVDownload, downloadCSV } from '../utils';
-import MuiTooltip from '@mui/material/Tooltip';
 
 export const defaultToolbarStyles = theme => ({
   root: {

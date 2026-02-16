@@ -1,11 +1,8 @@
-import Button from '@mui/material/Button';
+import { Button, TableCell, TableSortLabel, Tooltip as MuiTooltip } from '@mui/material';
+import { Help as HelpIcon } from '@mui/icons-material';
 import clsx from 'clsx';
-import HelpIcon from '@mui/icons-material/Help';
-import MuiTooltip from '@mui/material/Tooltip';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import TableCell from '@mui/material/TableCell';
-import TableSortLabel from '@mui/material/TableSortLabel';
 import useColumnDrop from '../hooks/useColumnDrop.js';
 import { makeStyles } from 'tss-react/mui';
 import { useDrag } from 'react-dnd';

@@ -1,6 +1,6 @@
 import { makeStyles } from 'tss-react/mui';
 import clsx from 'clsx';
-import MuiTableHead from '@mui/material/TableHead';
+import { TableHead as MuiTableHead } from '@mui/material';
 import React, { useState } from 'react';
 import TableHeadCell from './TableHeadCell';
 import TableHeadRow from './TableHeadRow';

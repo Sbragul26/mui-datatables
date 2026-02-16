@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import clsx from 'clsx';
-import TableCell from '@mui/material/TableCell';
+import { TableCell } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles({ name: 'MUIDataTableBodyCell' })(theme => ({

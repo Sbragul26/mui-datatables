@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
-import MuiTableBody from '@mui/material/TableBody';
+import { Typography, TableBody as MuiTableBody } from '@mui/material';
 import TableBodyCell from './TableBodyCell';
 import TableBodyRow from './TableBodyRow';
 import TableSelectCell from './TableSelectCell';

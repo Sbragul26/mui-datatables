@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MuiTableCell from '@mui/material/TableCell';
-import MuiTableRow from '@mui/material/TableRow';
-import MuiTableFooter from '@mui/material/TableFooter';
-import MuiTablePagination from '@mui/material/TablePagination';
+import {
+  TableCell as MuiTableCell,
+  TableRow as MuiTableRow,
+  TableFooter as MuiTableFooter,
+  TablePagination as MuiTablePagination,
+} from '@mui/material';
 import JumpToPage from './JumpToPage';
 import { makeStyles } from 'tss-react/mui';
 import { getPageValue } from '../utils';

@@ -1,18 +1,20 @@
-import Button from '@mui/material/Button';
-import Checkbox from '@mui/material/Checkbox';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
-import Grid from '@mui/material/Grid';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import ListItemText from '@mui/material/ListItemText';
-import MenuItem from '@mui/material/MenuItem';
+import {
+  Button,
+  Checkbox,
+  FormControl,
+  FormControlLabel,
+  FormGroup,
+  Grid,
+  Input,
+  InputLabel,
+  ListItemText,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+} from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Select from '@mui/material/Select';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 import clsx from 'clsx';
 import { withStyles } from 'tss-react/mui';
 import cloneDeep from 'lodash.clonedeep';
