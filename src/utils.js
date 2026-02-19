@@ -1,6 +1,9 @@
 function buildMap(rows) {
-  return rows.reduce((accum, { dataIndex }) => {
-    accum[dataIndex] = true;
+  if (!rows || !Array.isArray(rows)) return {};
+  return rows.reduce((accum, row) => {
+    if (row != null && row.dataIndex !== undefined) {
+      accum[row.dataIndex] = true;
+    }
     return accum;
   }, {});
 }
@@ -48,6 +51,7 @@ function getCollatorComparator() {
 
 function sortCompare(order) {
   return (a, b) => {
+    if (a == null || b == null) return 0;
     var aData = a.data === null || typeof a.data === 'undefined' ? '' : a.data;
     var bData = b.data === null || typeof b.data === 'undefined' ? '' : b.data;
     return (
