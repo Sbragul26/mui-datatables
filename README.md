@@ -547,9 +547,6 @@ open  http://localhost:5050/ in browser
 
 After you make your changes locally, you can run the test suite with `npm test`.
 
-## License
-The files included in this repository are licensed under the MIT license.
-
 <hr/>
 
 ## Join the Community!
@@ -571,9 +568,6 @@ Find out more on the <a href="https://layer5.io/community">Layer5 community</a>.
 </p>
 <br /><br />
 <!-- <div>&nbsp;</div> -->
-
-
-
 
 <div style="display: flex; justify-content: center; align-items:center;">
 <div>
@@ -604,3 +598,12 @@ Find out more on the <a href="https://layer5.io/community">Layer5 community</a>.
 <br /><br />
 <p align="left">
 &nbsp;&nbsp;&nbsp;&nbsp; <i>Not sure where to start?</i> Grab an open issue with the <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+(org%3Alayer5io+OR+org%3Ameshery+OR+org%3Alayer5labs+OR+org%3Aservice-mesh-performance+OR+org%3Aservice-mesh-patterns+OR+org%3Ameshery-extensions)+label%3A%22help+wanted%22">help-wanted label</a>.</p>
+<br />
+<ul>
+  <li>Find us on Twitter: <a href="https://x.com/layer5">@layer5</a>, <a href="https://x.com/mesheryio">@mesheryio</a>, and <a href="https://x.com/kanvas_new">@kanvas-new</a>.</li>
+  <li>Visit us on LinkedIn: <a href="https://www.linkedin.com/company/layer5">Layer5</a>, <a href="https://www.linkedin.com/showcase/meshery/">Meshery</a>, and <a href="https://www.linkedin.com/showcase/kanvas-new">Kanvas</a>.</li>
+  <li>Subscribe on <a href="https://www.youtube.com/Layer5io?sub_confirmation=1">Layer5 Youtube</a>, <a href="https://www.youtube.com/@mesheryio?sub_confirmation=1">Meshery Youtube</a></li>
+</ul>
+
+## License
+The files included in this repository are licensed under the MIT license.
