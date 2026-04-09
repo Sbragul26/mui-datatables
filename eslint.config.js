@@ -5,7 +5,10 @@ const globals = require('globals');
 
 module.exports = [
   {
-    files: ['src/**/*.{js,jsx}'],
+    ignores: ['dist/**', 'build/**', 'coverage/**', 'docs/**'],
+  },
+  {
+    files: ['src/**/*.{js,jsx}', 'examples/**/*.{js,jsx}', 'test/**/*.{js,jsx}', '*.js'],
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
